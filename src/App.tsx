@@ -4,7 +4,7 @@ import { SafeAreaView, Text, StyleSheet } from 'react-native';
 const App = () => {
     return (
         <SafeAreaView style={styles.App}>
-            <Text>Hello world!</Text>
+            <Text style={styles.text}>Hello world!</Text>
         </SafeAreaView>
     );
 };
@@ -14,6 +14,10 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'black',
     },
+    text: {
+        color: 'white',
+        fontSize: 30
+    }
 });
 
 export default App;
