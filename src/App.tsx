@@ -1,23 +1,17 @@
 import React from 'react';
-import { SafeAreaView, Text, StyleSheet } from 'react-native';
+import {ThemeProvider} from 'styled-components';
+import Header from './components/Header';
+import useAppearance from './hooks/useAppearence';
+import {Container} from './style';
 
-const App = () => {
-    return (
-        <SafeAreaView style={styles.App}>
-            <Text style={styles.text}>Hello world!</Text>
-        </SafeAreaView>
-    );
+const App: React.FC = () => {
+  const {theme} = useAppearance();
+  return (
+    <ThemeProvider theme={theme}>
+      <Container>
+        <Header />
+      </Container>
+    </ThemeProvider>
+  );
 };
-
-const styles = StyleSheet.create({
-    App: {
-        flex: 1,
-        backgroundColor: 'black',
-    },
-    text: {
-        color: 'white',
-        fontSize: 30
-    }
-});
-
 export default App;
