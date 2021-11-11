@@ -1,6 +1,7 @@
 import React from 'react';
+import { Text, View } from 'react-native';
 import {ThemeProvider} from 'styled-components';
-import Header from '~/components/Header';
+import Icon from './components/Icon';
 import useAppearance from '~/hooks/useAppearence';
 import {Container} from './style';
 
@@ -9,7 +10,14 @@ const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Container>
-        <Header />
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            }}>
+          <Icon icon="logo" size={150}></Icon>
+        </View>
       </Container>
     </ThemeProvider>
   );
