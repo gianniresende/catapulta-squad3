@@ -3,7 +3,6 @@ export const black = '#000';
 export const gray = '#ccc';
 export const red = '#d93936';
 export const purple = '#b68bda';
-
 export const brand01 = '#018786';
 export const brand02 = '#03dac6';
 export const brand03 = '#89cad9';
