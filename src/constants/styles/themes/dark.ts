@@ -1,6 +1,8 @@
 import {DefaultTheme} from 'styled-components';
 import * as Colors from '../colors';
 
+import {borders, spacing, typographyCommon} from "./common";
+
 export const themeDark: DefaultTheme = {
   colors: {
     primary: {
@@ -24,4 +26,7 @@ export const themeDark: DefaultTheme = {
       onMain: Colors.neutrais,
     },
   },
+  typography: typographyCommon,
+  borders,
+  spacing,
 };

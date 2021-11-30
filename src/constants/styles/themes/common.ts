@@ -1,8 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable quotes */
-// eslint-disable-next-line prettier/prettier
 import {Border, Spacing, Typography} from "styled-components";
-// eslint-disable-next-line prettier/prettier
 import {Fonts} from "../fonts";
 
 export const typographyCommon: Typography = {

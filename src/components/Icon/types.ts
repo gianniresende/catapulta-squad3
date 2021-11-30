@@ -1,6 +1,4 @@
-/* eslint-disable quotes */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable prettier/prettier */
+
 import { ImageProps } from "react-native";
 import { NameIconTypes } from "~/constants/icons";
 
