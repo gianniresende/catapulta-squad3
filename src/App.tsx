@@ -20,7 +20,7 @@ const App: React.FC = () => {
             }}>
           <Icon icon="logo" size={150}></Icon>
         </View>
-        <Text style={{fontSize: 50}}>Text</Text>
+        <Text typography="h1" color="primary">Text</Text>
       </Container>
     </ThemeProvider>
   );
