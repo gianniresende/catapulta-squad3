@@ -5,6 +5,7 @@ import Icon from './components/Icon';
 import useAppearance from '~/hooks/useAppearence';
 import {Container} from './style';
 import Separator from '~/components/Separator';
+import Text from './components/Text';
 
 const App: React.FC = () => {
   const {theme} = useAppearance();
@@ -19,6 +20,7 @@ const App: React.FC = () => {
             }}>
           <Icon icon="logo" size={150}></Icon>
         </View>
+        <Text style={{fontSize: 50}}>Text</Text>
       </Container>
     </ThemeProvider>
   );
