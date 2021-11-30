@@ -1,8 +1,5 @@
 import styled from 'styled-components/native';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {IconProps} from './types';
-
-type ImageProp = Required<Pick<IconProps, 'size'>>;
 
 export const Container = styled.Image<Partial<IconProps>>`
   min-width: ${({size}) => size}px;
